@@ -6,12 +6,12 @@ def calculate(lst_input):
 	tmp = np.array(lst_input)
 	tmp1 = tmp.reshape(3,3)
 
-	lst_mean = list((np.mean(tmp1, axis = 0), np.mean(tmp1, axis = 1), np.mean(tmp1)))
-	lst_var = list((np.var(tmp1, axis = 0), np.var(tmp1, axis = 1), np.var(tmp1)))
-	lst_sd = list((np.std(tmp1, axis = 0), np.std(tmp1, axis = 1), np.std(tmp1)))
-	lst_max = list((np.max(tmp1, axis = 0), np.max(tmp1, axis = 1), np.max(tmp1)))
-	lst_min = list((np.min(tmp1, axis = 0), np.min(tmp1, axis = 1), np.min(tmp1)))
-	lst_sum = list((np.sum(tmp1, axis = 0), np.sum(tmp1, axis = 1), np.sum(tmp1)))
+	lst_mean = list((np.mean(tmp1, axis = 0).tolist(), np.mean(tmp1, axis = 1).tolist(), np.mean(tmp1).tolist()))
+	lst_var = list((np.var(tmp1, axis = 0).tolist(), np.var(tmp1, axis = 1).tolist(), np.var(tmp1).tolist()))
+	lst_sd = list((np.std(tmp1, axis = 0).tolist(), np.std(tmp1, axis = 1).tolist(), np.std(tmp1).tolist()))
+	lst_max = list((np.max(tmp1, axis = 0).tolist(), np.max(tmp1, axis = 1).tolist(), np.max(tmp1).tolist()))
+	lst_min = list((np.min(tmp1, axis = 0).tolist(), np.min(tmp1, axis = 1).tolist(), np.min(tmp1).tolist()))
+	lst_sum = list((np.sum(tmp1, axis = 0).tolist(), np.sum(tmp1, axis = 1).tolist(), np.sum(tmp1).tolist()))
 
 	calculations = {}
 	calculations['mean'] = lst_mean
