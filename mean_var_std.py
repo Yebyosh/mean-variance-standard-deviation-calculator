@@ -16,7 +16,7 @@ def calculate(lst_input):
 	calculations = {}
 	calculations['mean'] = lst_mean
 	calculations['variance'] = lst_var
-	calculations['stndard deviation'] = lst_sd
+	calculations['standard deviation'] = lst_sd
 	calculations['max'] = lst_max
 	calculations['min'] = lst_min
 	calculations['sum'] = lst_sum
