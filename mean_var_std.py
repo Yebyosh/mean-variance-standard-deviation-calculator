@@ -1,9 +1,9 @@
 import numpy as np
 
-def calculate(list):
-	if len(list) < 9:
+def calculate(lst_input):
+	if len(lst_input) < 9:
 		raise ValueError('List must contain nine numbers.')
-	tmp = np.array(list)
+	tmp = np.array(lst_input)
 	tmp1 = tmp.reshape(3,3)
 
 	lst_mean = list((np.mean(tmp1, axis = 0), np.mean(tmp1, axis = 1), np.mean(tmp1)))
